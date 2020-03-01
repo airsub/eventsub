@@ -2,19 +2,19 @@
 EventSub is a toolkit to understand, document and implement sending of data to any event-based analytics.
 
 # Core concepts
-The main idea of EventSub is to develop an universal instrument for developers, product managers and analytics. It's like Swagger™ or WSDL for an event-based analytics.
+The main idea of EventSub is to develop a universal instrument for developers, product managers, analytics. It's like Swagger™ or WSDL for event-based analytics.
 
 ## Module
-Module is logical parts of your application. A name of each event inside a module will be prefixed with a name of the module.
+Modules are logical parts of your application. A name of each event inside a module will be prefixed with the name of the module.
 
 A name of a module is usually a noun.
 
 Examples: `Checkout`, `Signup`, `Onboarding_Step_1`, `Product_Card`.
 
 ### Module properties
-Each module has it's own set of module properties and each event inside the module must contain all of the required module properties and may contain any of the optional module properties. Module properties can be required or optional.
+Each module has its own set of module properties and each event inside the module must contain all of the required module properties and may contain any of the optional module properties. Module properties can be required or optional.
 
-If a module property is required any event within module can't be sent without the property.
+If a module property is required any event within the module can't be sent without the property.
 
 Examples: `Source_Module`, `Cart_Price`.
 
@@ -33,7 +33,7 @@ If an event property is required the event can't be sent without the property.
 Examples: `Product_Type`, `Is_First_Item_In_Cart`.
 
 ## User properties
-User Properties are attributes of users and reflect the current state of the user. Use these if you want to segment your users based on these properties. All of users properties is optional because they can be sent at any time in user lifecycle.
+User Properties are attributes of users and reflect the current state of the user. Use these if you want to segment your users based on these properties. All of the user properties are optional because they can be sent at any time in the user lifecycle.
 
 Examples: `User_Type`, `Is_Registered`, `Marketting_Channel`.
 
@@ -48,7 +48,7 @@ Each property must have its own type from the list below:
 
 # Architecture
 EventSub has two main parts:
-1. Visual viwer and editor to build an `esjson` file describing all modules, events and properties withing your app
+1. Visual viewer and editor to build an `esjson` file describing all modules, events, properties within your app
 2. Codegen tool to create analytics layer code for developers
 
 # Supported platforms
